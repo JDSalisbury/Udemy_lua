@@ -27,3 +27,9 @@ function love.draw()
     love.graphics.setFont(gameStyles.gameFont)
     love.graphics.print(SCORE, 0, 0)
 end
+
+function love.mousepressed(x, y, button, istouch, presses)
+    if button == 1 then
+        SCORE = SCORE + 1
+    end
+end
