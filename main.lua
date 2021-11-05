@@ -1,22 +1,15 @@
 MESSAGE = 1
 
-function increaseMessage(num)
-    MESSAGE = MESSAGE + num
-end
+testScores = {}
 
-function double(num)
-    return num * 2
-end
+testScores[1] = 95
+testScores[2] = 87
+testScores[3] = 98
 
-function getHalf(num)
-    local var = num
-    return var / 2
-end
 
-increaseMessage(12)
-
+MESSAGE = testScores[2]
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(55))
-    love.graphics.print(getHalf(double(MESSAGE)))
+    love.graphics.print(MESSAGE)
 end
