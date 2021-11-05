@@ -1,13 +1,11 @@
 MESSAGE = 1
 
-testScores = {}
+testScores = {95, 87, 98}
 
-testScores[1] = 95
-testScores[2] = 87
-testScores[3] = 98
+table.insert(testScores, 4, 100)
 
 
-MESSAGE = testScores[2]
+MESSAGE = testScores
 
 function love.draw()
     love.graphics.setFont(love.graphics.newFont(55))
